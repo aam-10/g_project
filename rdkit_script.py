@@ -12,7 +12,6 @@ count  = 0
 for mol in suppl:
   count += 1
   if count == 68:
-        # Write the 18th molecule to the output SDF file
         mol = Chem.AddHs(mol, addCoords=True)
 
         atoms = [atom.GetSymbol() for atom in mol.GetAtoms()]
